@@ -18,7 +18,8 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build && tsc --emitDeclarationOnly",
+    "prepare": "vite build && tsc --emitDeclarationOnly",
     "preview": "vite preview"
   },
   "keywords": [
@@ -31,8 +32,8 @@
   ],
   "author": "Asad Anwar",
   "license": "MIT",
-  "devDependencies": {
-    "typescript": "^5.7.2",
-    "vite": "^6.0.5"
+  "dependencies": {
+    "typescript": "^5.4.5",
+    "vite": "^6.0.0"
   }
 }
