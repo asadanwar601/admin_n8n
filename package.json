@@ -1,0 +1,38 @@
+{
+  "name": "admin_n8n",
+  "version": "0.1.0",
+  "description": "Lightweight, customizable embeddable Admin RAG & Knowledge Base ingestion widget for n8n_saas_api and n8n backend",
+  "main": "./dist/admin-widget.cjs.js",
+  "module": "./dist/admin-widget.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/admin-widget.es.js",
+      "require": "./dist/admin-widget.cjs.js"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "n8n",
+    "rag",
+    "admin-widget",
+    "knowledge-base",
+    "pgvector",
+    "embeddable"
+  ],
+  "author": "Asad Anwar",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5"
+  }
+}
